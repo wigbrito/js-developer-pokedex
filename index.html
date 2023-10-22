@@ -20,6 +20,8 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/detalhes/styles.css">
+    
 </head>
 
 <body>
@@ -27,20 +29,29 @@
         <h1>Pokedex</h1>
 
         <ol id="pokemonList" class="pokemons">
+            
             <!-- ..... Pokemons here ..... -->
         </ol>
+        
+        <div id="pokemon-detail"></div>
 
         <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More
             </button>
         </div>
-    </section>
 
+        <label for="pokemonName">Nome do Pokémon:</label>
+        <input type="text" id="pokemonName" value="Pikachu">
+        <button id="showPokemonButton">Exibir Detalhes do Pokémon</button>
+        <div id="pokemon-details"></div>
+        
     <!-- Nosso JS -->
+    <script src="detalhes/script.js"></script>
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
+  
 </body>
 
 </html>
